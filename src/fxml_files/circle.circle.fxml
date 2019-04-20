@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml_files.CircleCircleController">
+   <children>
+      
+      <Canvas fx:id="canvas" height="400.0" width="600.0" />
+      <Label fx:id="lblCollide" layoutX="21.0" layoutY="328.0" text="Collide: false" />
+      <Label fx:id="lblDistance" layoutX="21.0" layoutY="311.0" text="Distance: " />
+      <Label fx:id="lblSCircle1" layoutX="21.0" layoutY="345.0" text="Static circle 1 radius:" />
+      <Label fx:id="lblMCircle2" layoutX="21.0" layoutY="362.0" text="Moving circle 2 radius:" />
+   </children>
+</AnchorPane>

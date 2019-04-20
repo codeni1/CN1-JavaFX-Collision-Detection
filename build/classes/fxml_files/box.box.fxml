@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="629.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml_files.BoxBoxController">
+   <children>
+      <Canvas fx:id="canvas" height="629.0" layoutX="-14.0" width="775.0" />
+      <Label fx:id="staticTopXYLabel" layoutX="34.0" layoutY="36.0" prefHeight="17.0" prefWidth="27.0" text="(0, 0)" />
+      <Label fx:id="movingTopXYLabel" layoutX="283.0" layoutY="36.0" text="(0, 0)" />
+      <Label layoutX="93.0" layoutY="57.0" prefHeight="109.0" prefWidth="122.0" style="-fx-border-color: black;" />
+      <Label layoutX="384.0" layoutY="57.0" prefHeight="109.0" prefWidth="69.0" style="-fx-border-color: black;" />
+      <Label fx:id="movingBottomXYLabel" layoutX="479.0" layoutY="172.0" text="(0, 0)" visible="false" />
+      <Label fx:id="staticBottomXYLabel" layoutX="215.0" layoutY="173.0" prefHeight="17.0" prefWidth="46.0" text="(0, 0)" visible="false" />
+      <Label layoutX="128.0" layoutY="36.0" style="-fx-font-weight: bold;" text="static box" />
+      <Label layoutX="387.0" layoutY="36.0" style="-fx-font-weight: bold;" text="mouse box" />
+      <Label layoutX="146.0" layoutY="14.0" text="X" />
+      <Label layoutX="67.0" layoutY="103.0" prefHeight="17.0" prefWidth="0.0" text="Y" />
+      <Label layoutX="414.0" layoutY="14.0" text="X" />
+      <Label layoutX="367.0" layoutY="103.0" prefHeight="17.0" prefWidth="0.0" text="Y" />
+      <Label layoutX="120.0" layoutY="174.0" text="Width: 150" />
+      <Label layoutX="17.0" layoutY="129.0" text="Height: 150" />
+      <Label layoutX="43.0" layoutY="490.0" text="IF" />
+      <Label layoutX="63.0" layoutY="490.0" text="( (this.staticBoxXAxis + staticBoxWidth) &gt;= mouseBoxXAxis" />
+      <Label layoutX="392.0" layoutY="498.0" text="&amp;&amp;" />
+      <Label layoutX="64.0" layoutY="530.0" text="this.staticBoxXAxis &lt;= (mouseBoxXAxis + mouseBoxWidth)" />
+      <Label layoutX="404.0" layoutY="564.0" text="&amp;&amp;" />
+      <Label layoutX="64.0" layoutY="564.0" text="(this.staticBoxYAxis + this.staticBoxHeight) &gt;= mouseBoxYAxis" />
+      <Label layoutX="392.0" layoutY="530.0" text="&amp;&amp;" />
+      <Label layoutX="64.0" layoutY="598.0" text="this.staticBoxYAxis &lt;= (mouseBoxYAxis + mouseBoxHeight) )" />
+      <Label fx:id="collide" layoutX="410.0" layoutY="598.0" text="{    COLLIDE     }" />
+      <Label fx:id="c1" layoutX="150.0" layoutY="473.0" text="?" />
+      <Label fx:id="c2" layoutX="310.0" layoutY="473.0" text="?" />
+      <Label fx:id="c3" layoutX="93.0" layoutY="514.0" text="?" />
+      <Label fx:id="c4" layoutX="261.0" layoutY="514.0" text="?" />
+      <Label fx:id="c5" layoutX="158.0" layoutY="551.0" text="?" />
+      <Label fx:id="c6" layoutX="329.0" layoutY="553.0" text="?" />
+      <Label fx:id="c7" layoutX="93.0" layoutY="588.0" text="?" />
+      <Label fx:id="c8" layoutX="261.0" layoutY="588.0" text="?" />
+      <Label fx:id="notcollide" layoutX="513.0" layoutY="598.0" text="{    NOT COLLIDE     }" />
+   </children>
+</AnchorPane>
