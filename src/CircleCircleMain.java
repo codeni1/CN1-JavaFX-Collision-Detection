@@ -34,8 +34,8 @@ public class CircleCircleMain extends Application {
         //windowApplication.setScene(new Scene(rootNode, 900, 500));
         
         //Using FXML
-        Parent rootNode = FXMLLoader.load(getClass().getResource("/fxml_files/circle.circle.fxml"));
-        //Parent rootNode = FXMLLoader.load(getClass().getResource("/fxml_files/box.box.fxml"));
+        //Parent rootNode = FXMLLoader.load(getClass().getResource("/fxml_files/circle.circle.fxml"));
+        Parent rootNode = FXMLLoader.load(getClass().getResource("/fxml_files/box.box.fxml"));
         windowApplication.setScene(new Scene(rootNode));
         windowApplication.show();       
     }
